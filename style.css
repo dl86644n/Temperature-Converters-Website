@@ -1,6 +1,20 @@
 #bannerimage {
-    width: 100%;
-    background-image: url(../images/tempBan.jpg);
+    width: 50%;
+    background-image: url(../images/fireandice.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.navbar {
+    background-color: black;
+    
+}
+.navbar-brand {
+    color: white;
+}
+.card {
+    background-color: black;
+    color: white
+}
+.body {
+    background-color: grey;
 }
