@@ -2,22 +2,53 @@
 <html lang="en">
 
 <head>
+    <title>Temperature Calculators</title>
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-    <title>Temperature Calculators</title>
-    
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript for Fahrenheit to Celsius -->
+    <script src="scripts/Fahr_To_Cels.js" defer></script>
+
 </head>
 
 <body>
-     <!--Navigation Bar-->
-     <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Home Page</a>
-        <a class="navbar-brand" href="index.html">Fahrenheit To Celcius</a>
-        <a class="navbar-brand" href="index.html">Celcius to Fahrenheit</a>
-      </nav>
-  
-   
+    <!--Navigation Bar-->
+    <div class="p-5">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Home Page</a>
+            <a class="navbar-brand" href="Fahr_To_Cels.html">Fahrenheit To Celsius</a>
+            <a class="navbar-brand" href="Cels_To_Fahr.html">Celsius to Fahrenheit</a>
+        </nav>
+    </div>
+    <div id="bannerimage">
+        <img src="images/tempBan.jpg" alt="Thermometer in the Clouds">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body p-5">
+                        <div class="text-center">
+                            <form>
+                                <p><input type="number" id="fahrenheitNumber"></p>
+                                <p><input type="button" id="celsiusTempBtn" value="  Calculate to Celsius  "></p>
+                                <p><input type="text" id="celsiusResult" readonly></p>
+                                <p><button type="reset" value="Reset">Reset</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!-- Bootstrap/Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -27,5 +58,10 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 </body>
+<footer class="text-center">
+    <p>
+        &copy; Dana Technologies
+    </p>
+</footer>
 
 </html>
